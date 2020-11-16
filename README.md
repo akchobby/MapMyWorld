@@ -1,10 +1,11 @@
-# AMCL localization
-The package my robot lauches the acml node. After which using move_base (2d nav goal) the required localization results were acheived.
+# RTAB Mapping 
+The package my robot lauches the RTAB mapping node. After which using teleop_twist_keyboard the robot is moved in the environment to map it.
+
 This is an excercise as a part of the Udacity Robotics Software Engineer Nano degree.
 
 # Demo 
 
-![ACML localization](samples/amcl.gif)
+![RTAB Mapping](samples/capture.png)
 
 # Usage 
 
@@ -18,7 +19,7 @@ $ sudo apt-get install ros-kinetic-move-base
 $ sudo apt-get install ros-kinetic-amcl
 ```
 
-* Clone the repo. Note that the repo uses git lfs to maintain the large map files. Install git lfs as shown below:
+* Clone the repo. Note that the repo uses git lfs to maintain the large map and rtab database files. Install git lfs as shown below:
 ```
 $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 $ sudo apt install git-lfs
@@ -31,8 +32,14 @@ cd localization
 git lfs install 
 git lfs pull
 ```
-* Now Catkin make the repo and launch it as shown:
+Now Catkin make the repo and launch different nodes as shown:
 
 ```bash
-roslaunch my_robot amcl.launch
+roslaunch my_robot world.launch
+```
+```
+roslaunch my_robot mapping.launch
+```
+```
+rosrun teleop_twist_keyboard  teleop_twist_keyboard.py
 ```
