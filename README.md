@@ -5,7 +5,7 @@ This is an excercise as a part of the Udacity Robotics Software Engineer Nano de
 
 # Demo 
 
-![RTAB Mapping](samples/capture.png)
+![RTAB Mapping](samples/Capture.PNG)
 
 # Usage 
 
