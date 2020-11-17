@@ -28,7 +28,7 @@ The above is for debian systems if you need to install in any other follow this 
 
 * Once installed get into the localization directory and follow this:
 ```
-cd localization
+cd MapMyWorld
 git lfs install 
 git lfs pull
 ```
