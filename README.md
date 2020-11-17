@@ -43,3 +43,9 @@ roslaunch my_robot mapping.launch
 ```
 roslaunch teleop_twist_keyboard  teleop.launch
 ```
+
+The repo already contains a database in the path below:
+
+```
+MapMyWorld/my_robot/rtabmap.db
+```
