@@ -24,6 +24,8 @@ $ sudo apt-get install ros-kinetic-amcl
 $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 $ sudo apt install git-lfs
 ```
+### Deleted the lfs files --------
+
 The above is for debian systems if you need to install in any other follow this [link](https://git-lfs.github.com/)
 
 * Once installed get into the localization directory and follow this:
